@@ -40,21 +40,11 @@ public class Main {
         //Задача 4
         System.out.println("Задача 4");
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        //Варианс с перезаписью массива
-        for (int i = 0; i < reverseFullName.length / 2; i++) {
-            char temp = reverseFullName[i];
-            reverseFullName[i] = reverseFullName[reverseFullName.length - 1 - i];
-            reverseFullName[reverseFullName.length - 1 - i] = temp;
-        }
-        System.out.println(reverseFullName);
-        System.out.println();
 
-        /*
-        Варианс без перезаписью массива
-        char[] reverseFullName1= { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = reverseFullName1.length - 1; i >= 0; i--) {
-            System.out.print(reverseFullName1[i]);
+        //Варианс без перезаписью массива
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
         }
-        */
+
     }
 }
